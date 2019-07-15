@@ -1,0 +1,190 @@
+﻿@page "/page"
+@page "/page/{number:int}"
+@inject HttpClient Http
+@using System.Globalization
+@using System.Text
+@using System.Text.RegularExpressions
+
+<p>
+    <button class="btn btn-primary" onclick="@DecrementCount">Previous</button>&nbsp;&nbsp;Page: @currentPage &nbsp;&nbsp;<button class="btn btn-primary" onclick="@IncrementCount">Next</button>
+</p>
+
+<iframe srcdoc="@pageContent" style="border-style:none;width:100%;height:900px;"></iframe>
+
+<p>new words @newwords.Count()</p>
+<ul>
+    @foreach (var item in newwords)
+    {
+        <li>@item</li>
+    }
+</ul>
+<p>gloswordsfound @gloswordsfound.Count()</p>
+<ul>
+    @foreach (var item2 in gloswordsfound)
+    {
+        <li>@item2</li>
+    }
+</ul>
+
+<!--
+<p>Log</p>
+<p>@Log</p>
+-->
+
+@functions {
+    [Parameter]
+    int number { get; set; } = 5;
+    int currentPage = 5;
+    int firstPage = 5;
+    int lastPage = 155;
+    string pageContent;
+    string book = "BeingandTimeMR";
+    string[] words = { "undefined" };
+    string[] gloswordsfound = { "undefined" };
+    string[] newwords = { "undefined" };
+    //string Log = "";
+    Dictionary<string, string> glossary = new Dictionary<string, string>(128);
+
+    protected override async Task OnInitAsync()
+    {
+        await GetGlossaryWords();
+        if (number != 5)
+        {
+            currentPage = number;
+        }
+        await GetPage();
+    }
+
+    async void DecrementCount()
+    {
+        if (currentPage == lastPage)
+        {
+            return;
+        }
+        if (currentPage > firstPage)
+        {
+            pageContent = "...working...";
+            this.StateHasChanged();
+            currentPage--;
+            await GetPage();
+            this.StateHasChanged();
+        }
+    }
+
+    async void IncrementCount()
+    {
+        if (currentPage == lastPage)
+        {
+            return;
+        }
+        if (currentPage < lastPage)
+        {
+            pageContent = "...working...";
+            this.StateHasChanged();
+            currentPage++;
+            await GetPage();
+            this.StateHasChanged();
+        }
+    }
+
+    async Task GetPage()
+    {
+        //Log = "";
+        string url = @"https://www.beyng.com/pages/en/" +  book + "/" + book + "." + String.Format("{0:D3}", currentPage) + ".html";
+        pageContent = await Http.GetStringAsync(url);
+        if (!pageContent.Contains("svg"))
+        {
+            pageContent = TagGreek(pageContent);
+        }
+    }
+
+    async Task GetGlossaryWords()
+    {
+        string url = @"pages/glossarywords.txt";
+        string glossaryWords = await Http.GetStringAsync(url);
+        foreach (string line in glossaryWords.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
+        {
+            string[] ts = line.Split(':');
+            // Log += $"Adding gloss {ts[0]} : {ts[1]}-";
+            glossary.Add(ts[0], ts[1]);
+        }
+    }
+
+    string TagGreek(string s)
+    {
+        // Log += "in TagGreek-";
+        GetGreekWords(s);
+        foreach (string word in gloswordsfound)
+        {
+            string eng = glossary[word];
+            // Log += $"gloslinking {word} to {eng}-";
+            string taggedword = $"<span title=\"{eng}\">{word}</span>";
+            s = s.Replace(word, taggedword);
+
+            CultureInfo ci = new CultureInfo("el-GR");
+            string uWord = ci.TextInfo.ToTitleCase(word);
+            if (words.Contains(uWord))
+            {
+                // Log += $"gloslinking {uWord} to {eng}-";
+                taggedword = $"<span title=\"{eng}\">{uWord}</span>";
+                s = s.Replace(uWord, taggedword);
+            }
+        }
+        return s;
+    }
+
+    string ReplaceFirst(string text, string search, string replace)
+    {
+        int pos = text.IndexOf(search, StringComparison.Ordinal);
+        if (pos < 0)
+        {
+            return text;
+        }
+        return text.Substring(0, pos) + replace + text.Substring(pos + search.Length);
+    }
+
+    void GetGreekWords(string s)
+    {
+        Regex reg = new Regex(@"\W+");
+        string[] warr = reg.Split(s);
+        List<string> greekwords = new List<string>();
+        List<string> gloswords = new List<string>();
+        foreach (string w in warr)
+        {
+            if (w.Length < 3)
+            {
+                continue;
+            }
+            if (Encoding.UTF8.GetByteCount(w) != w.Length)
+            {
+                string lw = w.ToLower();
+                if (glossary.Keys.Contains(lw))
+                {
+                    if (!gloswords.Contains(lw))
+                    {
+                        gloswords.Add(lw);
+                    }
+                }
+                if (!greekwords.Contains(w))
+                {
+                    greekwords.Add(w);
+                }
+            }
+            GreekComparer gc = new GreekComparer();
+            gloswords.Sort(gc);
+            gloswordsfound = gloswords.ToArray();
+            greekwords.Sort(gc);
+            words = greekwords.ToArray();
+            newwords = greekwords.Except(gloswords).ToArray();
+        }
+    }
+
+    // https://social.msdn.microsoft.com/Forums/en-US/df716912-d825-4a6e-8f86-536fd982137b/stringcompare-with-unicode-characters
+    class GreekComparer : IComparer<String>
+    {
+        public int Compare(string s1, string s2)
+        {
+            return String.Compare(s1.Normalize(System.Text.NormalizationForm.FormD), s2.Normalize(System.Text.NormalizationForm.FormD), StringComparison.InvariantCultureIgnoreCase);
+        }
+    }
+}
