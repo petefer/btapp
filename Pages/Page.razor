@@ -9,8 +9,9 @@
     <button class="btn btn-primary" onclick="@DecrementCount">Previous</button>&nbsp;&nbsp;Page: @currentPage &nbsp;&nbsp;<button class="btn btn-primary" onclick="@IncrementCount">Next</button>
 </p>
 
-<iframe srcdoc="@pageContent" style="border-style:none;width:100%;height:900px;"></iframe>
+@((MarkupString)pageContent)
 
+<!--
 <p>new words @newwords.Count()</p>
 <ul>
     @foreach (var item in newwords)
@@ -25,7 +26,7 @@
         <li>@item2</li>
     }
 </ul>
-
+-->
 <!--
 <p>Log</p>
 <p>@Log</p>
@@ -33,10 +34,10 @@
 
 @functions {
     [Parameter]
-    int number { get; set; } = 5;
-    int currentPage = 5;
-    int firstPage = 5;
-    int lastPage = 155;
+    int number { get; set; } = 21;
+    int currentPage = 21;
+    int firstPage = 21;
+    int lastPage = 64;
     string pageContent;
     string book = "BeingandTimeMR";
     string[] words = { "undefined" };
@@ -92,9 +93,25 @@
         //Log = "";
         string url = @"https://www.beyng.com/pages/en/" +  book + "/" + book + "." + String.Format("{0:D3}", currentPage) + ".html";
         pageContent = await Http.GetStringAsync(url);
+        pageContent = GetHtmlBody(pageContent);
         if (!pageContent.Contains("svg"))
         {
             pageContent = TagGreek(pageContent);
+        }
+    }
+
+    string GetHtmlBody(string html)
+    {
+        RegexOptions options = RegexOptions.IgnoreCase | RegexOptions.Singleline;
+        Regex regx = new Regex( "<body>(?<theBody>.*)</body>", options );
+
+        Match match = regx.Match( html );
+
+        if ( match.Success ) {
+            return match.Groups["theBody"].Value;
+        } else
+        {
+            return "Body not found in HTML.";
         }
     }
 
@@ -106,7 +123,7 @@
         {
             string[] ts = line.Split(':');
             // Log += $"Adding gloss {ts[0]} : {ts[1]}-";
-            glossary.Add(ts[0], ts[1]);
+            glossary.Add(ts[0], ts[1].TrimEnd());
         }
     }
 
