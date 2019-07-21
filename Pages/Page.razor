@@ -170,13 +170,15 @@
         {
             foreach (var id in ids)
             {
-                var pc = await FetchPC(xdoc, id);
-                XmlDocumentFragment xfrag = xdoc.CreateDocumentFragment();
-                xfrag.InnerXml = pc;
-
                 var node = xdoc.SelectSingleNode($"//p[@id='{id}']");
+                if (id != "FN")
+                {
+                    var pc = await FetchPC(xdoc, id);
+                    XmlDocumentFragment xfrag = xdoc.CreateDocumentFragment();
+                    xfrag.InnerXml = pc;
+                    node.AppendChild(xfrag);
+                }
                 ((XmlElement)node).SetAttribute("style","display:none");
-                node.AppendChild(xfrag);
             }
             PCon = true; 
             PCloaded = true;
