@@ -8,7 +8,7 @@
 ἀπό:from, because of
 ἀποφαίνεσθαι:to let be seen
 ἀπόφανσις:manifestation, declaration
-γένος:offspring
+γένος:genus
 γιγαντομαχία:battle of giants
 δηλοῦν:to make visible, reveal
 διαλεκτικός:skilled in logical argument
@@ -20,6 +20,7 @@
 εὐχή:prayer
 ἔχον:thing(s) having
 ζῷον:animal
+ἡ:the
 ἲδια:foo
 καθόλου:universal, universally
 λαθ:foo
@@ -32,15 +33,18 @@
 μῦθόν:myth
 νοεῖν:to discern, perceive
 νόησις:deliberation, discernment
+ὄν:reality, Being
 ὄντα:beings
-οὐσία:Being
+οὐσία:presence
 οὐσίας:beings
 οὔτε:neither...nor
 πάντων:all
 παρουσία:arrival
 περὶ:about, around
 πώς:how
+τὰ:the
 τινα:as some
+τὸ:the
 συν:with
 σύνθεσις:combination
 τῆς:the

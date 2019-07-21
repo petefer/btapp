@@ -4,12 +4,25 @@
 @using System.Globalization
 @using System.Text
 @using System.Text.RegularExpressions
+@using System.Xml
 
-<p>
-    <button class="btn btn-primary" onclick="@DecrementCount">Previous</button>&nbsp;&nbsp;Page: @currentPage &nbsp;&nbsp;<button class="btn btn-primary" onclick="@IncrementCount">Next</button>
-</p>
+<div>
+    <button class="btn btn-primary" onclick="@DecrementCount">Previous</button>
+    &nbsp;&nbsp;Page: @currentPage &nbsp;&nbsp;
+    <button class="btn btn-primary" onclick="@IncrementCount">Next</button>
+    &nbsp;&nbsp;<input type="checkbox" bind="PCon" onclick="@TogglePS"/> Paraphrase
+<!--
 
+    &nbsp;&nbsp;Go to page:<input bind="userPage" onkeyup="@GoToPage"/>
+    -->
+</div>
+<hr />
+<div>
 @((MarkupString)pageContent)
+</div>
+<hr />
+<br />
+<button class="btn btn-primary" onclick="@IncrementCount">Next</button>
 
 <!--
 <p>new words @newwords.Count()</p>
@@ -27,24 +40,26 @@
     }
 </ul>
 -->
-<!--
+
 <p>Log</p>
 <p>@Log</p>
--->
 
-@functions {
+@code {
     [Parameter]
     int number { get; set; } = 21;
     int currentPage = 21;
     int firstPage = 21;
     int lastPage = 64;
-    string pageContent;
+    string userPage { get; set; }
+    string pageContent = "...working...";
     string book = "BeingandTimeMR";
     string[] words = { "undefined" };
     string[] gloswordsfound = { "undefined" };
     string[] newwords = { "undefined" };
-    //string Log = "";
+    string Log = "";
     Dictionary<string, string> glossary = new Dictionary<string, string>(128);
+    bool PCloaded = false;
+    bool PCon { get; set; } = false;
 
     protected override async Task OnInitAsync()
     {
@@ -56,8 +71,26 @@
         await GetPage();
     }
 
+    async void GoToPage()
+    {
+        Log += $"in GoToPage userPage is {userPage}";
+        int p = Int32.Parse(userPage);
+        if (p > lastPage || p < firstPage)
+        {
+            return;
+        }
+
+        pageContent = "...working...";
+        this.StateHasChanged();
+        currentPage = p;
+        Log += $"in GoToPage currentPage is {currentPage}";
+        await GetPage();
+        this.StateHasChanged();
+    }
+
     async void DecrementCount()
     {
+        Log = "";
         if (currentPage == lastPage)
         {
             return;
@@ -74,6 +107,7 @@
 
     async void IncrementCount()
     {
+        Log = "";
         if (currentPage == lastPage)
         {
             return;
@@ -90,14 +124,93 @@
 
     async Task GetPage()
     {
+        PCloaded = PCon = false;
         //Log = "";
-        string url = @"https://www.beyng.com/pages/en/" +  book + "/" + book + "." + String.Format("{0:D3}", currentPage) + ".html";
-        pageContent = await Http.GetStringAsync(url);
-        pageContent = GetHtmlBody(pageContent);
-        if (!pageContent.Contains("svg"))
+        pageContent += "fetching content from beyng.com...";
+        this.StateHasChanged();
+
+        string url = @"/pages/en/" +  book + "/" + book + "." + String.Format("{0:D3}", currentPage) + ".html";
+        string p = await Http.GetStringAsync(url);
+        
+        pageContent += "processing content...";
+        this.StateHasChanged();
+
+        p = GetHtmlBody(p);
+        if (!p.Contains("svg"))
         {
-            pageContent = TagGreek(pageContent);
+            p = TagGreek(p);
         }
+        pageContent = p;
+    }
+    
+    async void TogglePS()
+    {
+        Log += $"in TogglePS PCloaded is {PCloaded}.";
+        this.StateHasChanged();
+
+        var xdoc = new XmlDocument();
+        xdoc.LoadXml("<root xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns=\"\">" + pageContent + "</root>");
+        XmlNodeList nodes = xdoc.SelectNodes("//p");
+        Log += $"nodes is {nodes}.";
+        this.StateHasChanged();
+        Log += $"nodes count is {nodes.Count}.";
+        this.StateHasChanged();
+        List<string> ids = new List<string>(5);
+        foreach (XmlNode node in nodes) 
+        {
+            string id = node.Attributes?["id"]?.InnerText ?? "";
+            if (id.Length > 0)
+            {
+                ids.Add(id);
+            }
+        }
+        Log += $"ids count is {ids.Count}.";
+        this.StateHasChanged();
+        if (!PCloaded)
+        {
+            foreach (var id in ids)
+            {
+                var pc = await FetchPC(xdoc, id);
+                XmlDocumentFragment xfrag = xdoc.CreateDocumentFragment();
+                xfrag.InnerXml = pc;
+
+                var node = xdoc.SelectSingleNode($"//p[@id='{id}']");
+                ((XmlElement)node).SetAttribute("style","display:none");
+                node.AppendChild(xfrag);
+            }
+            PCon = true; 
+            PCloaded = true;
+        }
+        else
+        {
+            PCon = !PCon;    
+            foreach (var id in ids)
+            {
+                var node = xdoc.SelectSingleNode($"//p[@id='{id}']");
+                
+                if (id.StartsWith("PC_"))
+                {
+                    ((XmlElement)node).SetAttribute("style", PCon ? "display:block" : "display:none");
+                }
+                else
+                {
+                    ((XmlElement)node).SetAttribute("style", PCon ? "display:none" : "display:block");
+                }
+            }
+        }
+        Log += $"PCloaded is {PCloaded}.";
+        Log += $"PCon is {PCon}.";
+        pageContent = xdoc.InnerXml;
+        this.StateHasChanged();
+    }
+
+    async Task<string> FetchPC(XmlDocument xdoc, string id)
+    {
+        string url = @"/btapp/pages/PC_" +  id + ".xml";
+        string pc = await Http.GetStringAsync(url);
+        Log += $"in FetchPC({id}) pc is {pc}.";
+        this.StateHasChanged();
+        return pc;
     }
 
     string GetHtmlBody(string html)
@@ -117,6 +230,8 @@
 
     async Task GetGlossaryWords()
     {
+        pageContent += "fetching Greek glossary from beyng.com...";
+
         string url = @"pages/glossarywords.txt";
         string glossaryWords = await Http.GetStringAsync(url);
         foreach (string line in glossaryWords.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries))
