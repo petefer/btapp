@@ -9,11 +9,15 @@
 <div>
     <button class="btn btn-primary" onclick="@DecrementCount">Previous</button>
     &nbsp;&nbsp;Page: @currentPage &nbsp;&nbsp;
-    <button class="btn btn-primary" onclick="@IncrementCount">Next</button>
-    &nbsp;&nbsp;<input type="checkbox" bind="PCon" onclick="@TogglePS"/> Paraphrase
+    <button class="btn btn-primary" onclick="@IncrementCount">Next</button>&nbsp;&nbsp;
+@if (currentPage > 20 && currentPage < 64)
+{
+    <button class="btn btn-secondary" onclick="@TogglePS">@((PCon ? "Original" : "Paraphrase"))</button>
+}
 <!--
+    <input type="checkbox" value="@PCon" onchange="@TogglePS"/><span>Paraphrase @PCon</span>
 
-    &nbsp;&nbsp;Go to page:<input bind="userPage" onkeyup="@GoToPage"/>
+    &nbsp;&nbsp;Go to page:<input type="number" bind="userPage" onkeyup="@GoToPage"/>
     -->
 </div>
 <hr />
