@@ -8,8 +8,13 @@
 ἀπό:from, because of
 ἀποφαίνεσθαι:to let be seen
 ἀπόφανσις:manifestation, declaration
+βούλεσθε:you will
+γὰρ:for
 γένος:genus
 γιγαντομαχία:battle of giants
+γιγνώσκετε:been known
+δὲ:but
+δῆλον:show
 δηλοῦν:to make visible, reveal
 διαλεκτικός:skilled in logical argument
 διηγεῖσθαι:described in full
@@ -21,6 +26,9 @@
 ἔχον:thing(s) having
 ζῷον:animal
 ἡ:the
+ἡμεῖς:you
+ἠπορήκαμεν:wa are confused
+φθέγγησθε:saying
 ἲδια:foo
 καθόλου:universal, universally
 λαθ:foo
@@ -29,25 +37,37 @@
 λόγον:word
 λόγος:discourse
 μάλιστα:most
+μὲν:on the one hand, on the other hand
 μετὰ:within
 μῦθόν:myth
 νοεῖν:to discern, perceive
 νόησις:deliberation, discernment
+νῦν:now
+ὁπόταν:when
+ὂν:is
 ὄν:reality, Being
 ὄντα:beings
 οὐσία:presence
 οὐσίας:beings
 οὔτε:neither...nor
+πάλαι:long gone
 πάντων:all
 παρουσία:arrival
 περὶ:about, around
+ποτε:ever
 πώς:how
+πρὸ:before
+σημαίνειν:to signify
 τὰ:the
+ταῦτα:these
+τί:any
 τινα:as some
 τὸ:the
+τοῦ:who
 συν:with
 σύνθεσις:combination
 τῆς:the
+ὑμεῖς:you
 ὑποκείμενον:what lies there underneath
 φαίνεσθαι:bringing to light
 φαινόμενα:bring to light
@@ -59,3 +79,5 @@
 φῶς:light
 ψεύδεσθαι:distortion
 ψυχὴ:soul
+ὡς:as
+ᾠόμεθα:think
