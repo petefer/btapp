@@ -175,14 +175,18 @@
             foreach (var id in ids)
             {
                 var node = xdoc.SelectSingleNode($"//p[@id='{id}']");
-                if (id != "FN")
+                if (!id.StartsWith("FN"))
                 {
                     var pc = await FetchPC(xdoc, id);
                     XmlDocumentFragment xfrag = xdoc.CreateDocumentFragment();
                     xfrag.InnerXml = pc;
                     node.AppendChild(xfrag);
+                    ((XmlElement)node).SetAttribute("style","display:none");
                 }
-                ((XmlElement)node).SetAttribute("style","display:none");
+                else
+                {
+                    ((XmlElement)node).SetAttribute("style","display:none;font-size:small");
+                }
             }
             PCon = true; 
             PCloaded = true;
@@ -200,7 +204,14 @@
                 }
                 else
                 {
-                    ((XmlElement)node).SetAttribute("style", PCon ? "display:none" : "display:block");
+                    if (id.StartsWith("FN"))
+                    {
+                        ((XmlElement)node).SetAttribute("style", PCon ? "display:none;font-size:small" : "display:block;font-size:small");
+                    }
+                    else
+                    {
+                        ((XmlElement)node).SetAttribute("style", PCon ? "display:none" : "display:block");
+                    }
                 }
             }
         }
