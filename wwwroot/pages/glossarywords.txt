@@ -29,8 +29,10 @@
 ἡμεῖς:you
 ἠπορήκαμεν:wa are confused
 φθέγγησθε:saying
-ἲδια:foo
+ἴδια:its own
 καθόλου:universal, universally
+κατηγορεῖσθαι:was accused
+κατηγορίαι:accusation
 λαθ:foo
 λέγειν:to speak
 λεγόμενον:the spoken

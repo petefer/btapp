@@ -7,10 +7,16 @@
 @using System.Xml
 
 <div>
+@if (currentPage > firstPage)
+{
     <button class="btn btn-primary" onclick="@DecrementCount">Previous</button>
+}
     &nbsp;&nbsp;Page: @currentPage &nbsp;&nbsp;
-    <button class="btn btn-primary" onclick="@IncrementCount">Next</button>&nbsp;&nbsp;
-@if (currentPage > 20 && currentPage < 64)
+@if (currentPage < lastPage)
+{
+    <button class="btn btn-primary" onclick="@IncrementCount">Next</button>
+}
+@if (currentPage > 18 && currentPage < 64)
 {
     <button class="btn btn-secondary" onclick="@TogglePS">@((PCon ? "Original" : "Paraphrase"))</button>
 }
@@ -26,7 +32,10 @@
 </div>
 <hr />
 <br />
-<button class="btn btn-primary" onclick="@IncrementCount">Next</button>
+@if (currentPage < lastPage)
+{
+    <button class="btn btn-primary" onclick="@IncrementCount">Next</button>
+}
 
 <!--
 <p>new words @newwords.Count()</p>
@@ -43,16 +52,16 @@
         <li>@item2</li>
     }
 </ul>
--->
 
 <p>Log</p>
 <p>@Log</p>
+-->
 
 @code {
     [Parameter]
     int number { get; set; } = 21;
     int currentPage = 21;
-    int firstPage = 21;
+    int firstPage = 19;
     int lastPage = 64;
     string userPage { get; set; }
     string pageContent = "...working...";
