@@ -7,7 +7,7 @@
 @using System.Xml
 
 <div>
-@if (currentPage > firstPage)
+@if (currentPage > firstPage && currentPage < 78)
 {
     <button class="btn btn-primary" onclick="@DecrementCount">Previous</button>
 }
@@ -16,6 +16,7 @@
 {
     <button class="btn btn-primary" onclick="@IncrementCount">Next</button>
 }
+&nbsp;&nbsp;
 @if (currentPage > 18 && currentPage < 64)
 {
     <button class="btn btn-secondary" onclick="@TogglePS">@((PCon ? "Original" : "Paraphrase"))</button>
