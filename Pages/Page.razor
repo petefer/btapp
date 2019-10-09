@@ -17,7 +17,7 @@
     <button class="btn btn-primary" onclick="@IncrementCount">Next</button>
 }
 &nbsp;&nbsp;
-@if (currentPage > 18 && currentPage < 64)
+@if (currentPage > 18 && currentPage < 121)
 {
     <button class="btn btn-secondary" onclick="@TogglePS">@((PCon ? "Original" : "Paraphrase"))</button>
 }
@@ -63,7 +63,7 @@
     int number { get; set; } = 21;
     int currentPage = 21;
     int firstPage = 19;
-    int lastPage = 64;
+    int lastPage = 121;
     string userPage { get; set; }
     string pageContent = "...working...";
     string book = "BeingandTimeMR";
