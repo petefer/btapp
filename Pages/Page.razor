@@ -7,19 +7,19 @@
 @using System.Xml
 
 <div>
-@if (currentPage > firstPage && currentPage < 78)
+@if (currentPage > firstPage && currentPage <= lastPage)
 {
-    <button class="btn btn-primary" onclick="@DecrementCount">Previous</button>
+    <button class="btn btn-primary" onclick="DecrementCount">Previous</button>
 }
     &nbsp;&nbsp;Page: @currentPage &nbsp;&nbsp;
 @if (currentPage < lastPage)
 {
-    <button class="btn btn-primary" onclick="@IncrementCount">Next</button>
+    <button class="btn btn-primary" onclick="IncrementCount">Next</button>
 }
 &nbsp;&nbsp;
-@if (currentPage > 18 && currentPage < 121)
+@if (currentPage > 18 && currentPage <= lastPage)
 {
-    <button class="btn btn-secondary" onclick="@TogglePS">@((PCon ? "Original" : "Paraphrase"))</button>
+    <button class="btn btn-secondary" onclick="TogglePS">@((PCon ? "Original" : "Paraphrase"))</button>
 }
 <!--
     <input type="checkbox" value="@PCon" onchange="@TogglePS"/><span>Paraphrase @PCon</span>
@@ -35,7 +35,7 @@
 <br />
 @if (currentPage < lastPage)
 {
-    <button class="btn btn-primary" onclick="@IncrementCount">Next</button>
+    <button class="btn btn-primary" onclick="IncrementCount">Next</button>
 }
 
 <!--
@@ -60,7 +60,7 @@
 
 @code {
     [Parameter]
-    int number { get; set; } = 21;
+    public int number { get; set; } = 21;
     int currentPage = 21;
     int firstPage = 19;
     int lastPage = 121;
@@ -75,7 +75,7 @@
     bool PCloaded = false;
     bool PCon { get; set; } = false;
 
-    protected override async Task OnInitAsync()
+    protected override async Task OnInitializedAsync()
     {
         await GetGlossaryWords();
         if (number != 5)
