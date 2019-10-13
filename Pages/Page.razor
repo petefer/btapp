@@ -9,17 +9,17 @@
 <div>
 @if (currentPage > firstPage && currentPage <= lastPage)
 {
-    <button class="btn btn-primary" onclick="DecrementCount">Previous</button>
+    <button class="btn btn-primary" @onclick="DecrementCount">Previous</button>
 }
     &nbsp;&nbsp;Page: @currentPage &nbsp;&nbsp;
 @if (currentPage < lastPage)
 {
-    <button class="btn btn-primary" onclick="IncrementCount">Next</button>
+    <button class="btn btn-primary" @onclick="IncrementCount">Next</button>
 }
 &nbsp;&nbsp;
 @if (currentPage > 18 && currentPage <= lastPage)
 {
-    <button class="btn btn-secondary" onclick="TogglePS">@((PCon ? "Original" : "Paraphrase"))</button>
+    <button class="btn btn-secondary" @onclick="TogglePS">@((PCon ? "Original" : "Paraphrase"))</button>
 }
 <!--
     <input type="checkbox" value="@PCon" onchange="@TogglePS"/><span>Paraphrase @PCon</span>
@@ -35,7 +35,7 @@
 <br />
 @if (currentPage < lastPage)
 {
-    <button class="btn btn-primary" onclick="IncrementCount">Next</button>
+    <button class="btn btn-primary" @onclick="IncrementCount">Next</button>
 }
 
 <!--
