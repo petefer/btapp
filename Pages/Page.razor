@@ -17,7 +17,8 @@
     <button class="btn btn-primary" @onclick="IncrementCount">Next</button>
 }
 &nbsp;&nbsp;
-@if (currentPage > 18 && currentPage <= lastPage)
+@if (currentPage > 18 && currentPage <= lastPage 
+        && currentPage != 20 && currentPage != 64 && currentPage != 66)
 {
     <button class="btn btn-secondary" @onclick="TogglePS">@((PCon ? "Original" : "Paraphrase"))</button>
 }
