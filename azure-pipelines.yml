@@ -28,7 +28,7 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: 'dir bin\Release'
+    script: 'dir bin\Release\netstandard2.1'
 
 - task: CopyFiles@2
   inputs:
