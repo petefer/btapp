@@ -5,6 +5,7 @@
 ἀλήθεια:unconcealedness
 ἀληθές:unconcealed
 ἀληθεύειν:disclosing
+ἄνθρόποι:humans
 ἀπό:from, because of
 ἀποφαίνεσθαι:to let be seen
 ἀπόφανσις:manifestation, declaration
@@ -14,26 +15,34 @@
 γιγαντομαχία:battle of giants
 γιγνώσκετε:been known
 δὲ:but
+δ᾽:but
 δῆλον:show
 δηλοῦν:to make visible, reveal
+διαίρεσις:division
 διαλεκτικός:skilled in logical argument
+διανοειν:thinking
 διηγεῖσθαι:described in full
 εἶναι:Being
+ἐπιλανθάνονται:to forget
 ἑρμηνεύειν:interpreting
 ἐστι:happens
 ἐστιν:it is
+ἐστίν:it is
 εὐχή:prayer
+ἔχει:have
 ἔχον:thing(s) having
 ζῷον:animal
 ἡ:the
 ἡμεῖς:you
-ἠπορήκαμεν:wa are confused
+ἠπορήκαμεν:we are confused
 φθέγγησθε:saying
 ἴδια:its own
 καθόλου:universal, universally
+καὶ:and
 κατηγορεῖσθαι:was accused
 κατηγορίαι:accusation
 λαθ:foo
+λανθάνει:occurence
 λέγειν:to speak
 λεγόμενον:the spoken
 λόγον:word
@@ -45,10 +54,11 @@
 νοεῖν:to discern, perceive
 νόησις:deliberation, discernment
 νῦν:now
-ὁπόταν:when
+ὅκως:as
 ὂν:is
 ὄν:reality, Being
 ὄντα:beings
+ὁπόταν:when
 οὐσία:presence
 οὐσίας:beings
 οὔτε:neither...nor
@@ -57,13 +67,16 @@
 παρουσία:arrival
 περὶ:about, around
 ποτε:ever
-πώς:how
+πρᾶγμα:fact
+πραγμάτων:fact
 πρὸ:before
+πώς:how
 σημαίνειν:to signify
 τὰ:the
 ταῦτα:these
 τί:any
 τινα:as some
+τινός:whose
 τὸ:the
 τοῦ:who
 συν:with
