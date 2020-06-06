@@ -26,6 +26,10 @@ steps:
     projects: '$(projects)'
     arguments: '$(buildConfiguration)'
 
+- task: CmdLine@2
+  inputs:
+    script: 'dir bin\Release'
+
 - task: CopyFiles@2
   inputs:
     SourceFolder: 'bin\Release\netstandard2.1\publish'
