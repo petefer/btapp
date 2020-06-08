@@ -31,7 +31,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'bin\Release\netstandard2.1\publish'
+    SourceFolder: 'bin\Release\netstandard2.1\publish\wwwroot'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
