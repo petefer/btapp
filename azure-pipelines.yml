@@ -27,7 +27,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'bin\Release\netstandard2.1\publish\wwwroot'
+    SourceFolder: 'bin\Release\net5.0\publish\wwwroot'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
