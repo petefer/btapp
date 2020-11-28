@@ -244,7 +244,7 @@
     string GetHtmlBody(string html)
     {
         RegexOptions options = RegexOptions.IgnoreCase | RegexOptions.Singleline;
-        Regex regx = new Regex( "<body lang=\"en\">(?<theBody>.*)</body>", options );
+        Regex regx = new Regex( "<body>(?<theBody>.*)</body>", options );
 
         Match match = regx.Match( html );
 
