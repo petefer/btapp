@@ -7,18 +7,24 @@
 @using System.Xml
 
 <div>
-@if (currentPage > firstPage && currentPage <= lastPage)
+@if ( (currentPage > firstPage && currentPage <= lastPage)
+        ||
+        (currentPage > 434 && currentPage <= 439))
 {
     <button class="btn btn-primary" @onclick="DecrementCount">Previous</button>
 }
     &nbsp;&nbsp;Page: @currentPage &nbsp;&nbsp;
-@if (currentPage < lastPage)
+@if ( (currentPage < lastPage)
+        ||
+        (currentPage >= 434 && currentPage < 439))
 {
     <button class="btn btn-primary" @onclick="IncrementCount">Next</button>
 }
 &nbsp;&nbsp;
-@if (currentPage > 18 && currentPage <= lastPage 
+@if ( (currentPage > 18 && currentPage <= lastPage 
         && currentPage != 20 && currentPage != 64 && currentPage != 66)
+        ||
+        (currentPage >= 434 && currentPage <= 439)) // section 74
 {
     <button class="btn btn-secondary" @onclick="TogglePS">@((PCon ? "Original" : "Paraphrase"))</button>
 }
@@ -64,7 +70,7 @@
     public int number { get; set; } = 21;
     int currentPage = 21;
     int firstPage = 19;
-    int lastPage = 121;
+    int lastPage = 121; // with paraphrasing
     string userPage { get; set; }
     string pageContent = "...working...";
     string book = "BeingandTimeMR";
