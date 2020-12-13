@@ -155,17 +155,24 @@
         this.StateHasChanged();
 
         string url = @"/pages/en/" +  book + "/" + book + "." + String.Format("{0:D3}", currentPage) + ".html";
-        string p = await Http.GetStringAsync(url);
-        
-        pageContent += "processing content...";
-        this.StateHasChanged();
-
-        p = GetHtmlBody(p);
-        if (!p.Contains("svg"))
+        try
         {
-            p = TagGreek(p);
+            string p = await Http.GetStringAsync(url);
+            
+            pageContent += "processing content...";
+            this.StateHasChanged();
+
+            p = GetHtmlBody(p);
+            if (!p.Contains("svg"))
+            {
+                p = TagGreek(p);
+            }
+            pageContent = p;
         }
-        pageContent = p;
+        catch(HttpRequestException ex)
+        {
+            pageContent += $"url {url} failed: {ex.Message}";
+        }
     }
     
     async void TogglePS()
