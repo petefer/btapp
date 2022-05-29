@@ -1,6 +1,8 @@
 ﻿@page "/page"
 @page "/page/{number:int}"
 @inject HttpClient Http
+@inject IConfiguration Configuration
+@inject IWebAssemblyHostEnvironment HostEnvironment
 @using System.Globalization
 @using System.Text
 @using System.Text.RegularExpressions
@@ -154,7 +156,10 @@
         pageContent += "fetching content from beyng.com...";
         this.StateHasChanged();
 
-        string url = @"/pages/en/" +  book + "/" + book + "." + String.Format("{0:D3}", currentPage) + ".html";
+        // remove leading / to work locally
+        string bookFolder = Configuration[HostEnvironment.IsDevelopment() ? "BookFolder_DEV" : "BookFolder"];
+        string url = $"{bookFolder}/" +  book + "/" + book + "." + String.Format("{0:D3}", currentPage) + ".html";
+        // string url = @"/pages/en/" +  book + "/" + book + "." + String.Format("{0:D3}", currentPage) + ".html";
         try
         {
             string p = await Http.GetStringAsync(url);
