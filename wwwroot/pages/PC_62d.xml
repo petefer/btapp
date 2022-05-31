@@ -1,27 +1,45 @@
 ﻿<p id="PC_62d" class="noindent">
 <b>38. <i>Re Husserl: possibility is higher than actuality.</i></b> 
-This book would not be possible without Edmund Husserl,<span style="color:magenta;" title="
-In all of SZ, and particularly in this section's discussion of phenomenology as a method, 
+This book would not be possible without Edmund Husserl,
+<button id="Btn62d1" style="color:magenta;">◊</button>
+<dialog id="Dlg62d1">
+    <p style="text-indent:2em;">
+        In all of SZ, and particularly in this section's discussion of phenomenology as a method, 
 Heidegger makes no mention of the reductions that structure much of Husserl's methodology. 
 However, in October of 1927, after he had just written a draft for some sections of Husserl's 
 “Encyclopaedia Britannica Article,” Heidegger lectured on three moments in phenomenological 
-method as a second-order thematic procedure (see GA 24: 29-31= 21-23):
-• reduction: leading (-duction) the philosophical gaze “back” (re-) from its concentration
-on an object to a focus on the significance (“being”) of that object within the
+method as a second-order <i>thematic</i> procedure (see <a href="https://www.beyng.com/gaselis/?vol=24&amp;pg=29">GA 24: 29</a>-31 = 
+<a href="https://www.beyng.com/pages/en/BasicProblemsPhenomenology/BasicProblemsPhenomenology.021.html">21</a>-23):
+</p>
+<p style="margin-left:4em;text-indent:-2em;">
+    • <i>reduction</i>: leading (-duction) the philosophical gaze “back” (re-) <i>from</i> its concentration
+on an object <i>to</i> a focus on the significance (“being”) of that object within the
 phenomenological correlation. For Husserl, that meant “back to” the transcendental
-subject as constituting the meaning of the object. In Heidegger's paradigm, however,
-where ex-sistence is thrown ahead as a self-transcending eject, the re-duction is a
-matter of leading the thematic gaze ahead to the purpose or possibility that determines
-the being/significance of the thing. Hence, Heidegger transforms the re-duction into an
-in-duction, a “leading forward” (= Heidegger's recasting of Aristotle's epagōgē: cf.
-GA 9: 244 = 187).
-• construction: the explicit thematization of the being of an entity (cf. von Herrmann, II,
+<i>subject</i> as constituting the meaning of the object. In Heidegger's paradigm, however,
+where ex-sistence is thrown <i>ahead</i> as a self-transcending <i>eject</i>, the re-duction is a
+matter of leading the thematic gaze <i>ahead</i> to the purpose or possibility that determines
+the being/significance of the thing. Hence, Heidegger transforms the <i>re</i>-duction into an
+<i>in</i>-duction, a “leading <i>forward</i>” (= Heidegger's recasting of Aristotle's <i>epagōgē</i>: cf.
+<a href="https://www.beyng.com/gaselis/?vol=9&amp;pg=244">GA 9: 244</a> =
+<a href="https://www.beyng.com/pages/en/Pathmarks/Pathmarks.187.html">187</a>).
+</p>
+<p style="margin-left:4em;text-indent:-2em;">
+    • <i>construction</i>: the explicit thematization of the being of an entity (cf. von Herrmann, II,
 114.34-ff). This, however, has nothing to do with any “a-prioristic construction”: see
 SZ § 10, n. 9.
-• destruction: the dismantling of traditional concepts of being in order to get to their
+</p>
+<p style="margin-left:4em;text-indent:-2em;">
+    • <i>destruction</i>: the dismantling of traditional concepts of being in order to get to their
 source in the ex-sistential-temporal character of being.
-In SZ, these moments correspond to, respectively, SZ I.1-2 (re-duction as in-duction), SZ I.3
-(construction), and SZ II (destruction).">◊</span>
+</p>
+<p>
+    In SZ, these moments correspond to, respectively, SZ I.1-2 (re-duction as in-duction), SZ I.3
+(construction), and SZ II (destruction).
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 especially his <i>Logical Investigations</i>, the text in which phenomenology first
 achieved a breakthrough. The preliminary concept of phenomenology that we have provided in
 the present section shows that the essential thing about phenomenology is not its actuality as a

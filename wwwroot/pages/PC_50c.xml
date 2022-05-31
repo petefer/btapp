@@ -8,17 +8,29 @@ a preliminary definition of phenomenology.
 <br />
 &nbsp;&nbsp;The history of the word itself (which presumably first arose in the school of Christian
 Wolff, 1679-1754) is of no importance here.
-<span style="color:magenta;" title="In GA 17: 5, n. = 3, n. Heidegger says the term “phenomenology” was first
-used by Johann Heinrich Lambert (1728-77) in his 1764 two-volume work on logic, Neues
-Organon (see Bibliography). The word itself first appears in that work at p. 4.22f. in the Vorrede
-to vol. 1 where it is simply called “die Lehre von dem Schein.” 
-The second half of vol. 2, pp. 215-435, is entitled 
-“Phänomenologie oder die Lehre von dem Schein” and discusses how to avoid
-illusion and adjudicate sensible, psychological, moral, and probable Scheine. 
-See Karl Schuhmann, “‘Phenomenology’: A reflection on the history of the term,” 
-in The Routledge Companion to Phenomenology, ed. Sebastian Luft and Søren
-Overgaard, London: Routledge, 2021, 657-88. 
-[Roughly: Phenomenology is concerned in general with determining what is real
-and true in every kind of appearance. To that end it works out the specific causes
-and circumstances that produce and transform appearances, so that from
-appearances one can infer what is real and true.]">◊</span></p>
+<button id="Btn50c1" style="color:magenta;">◊</button>
+<dialog id="Dlg50c1">
+    <p>
+        In <a href="https://www.beyng.com/gaselis/?vol=17&amp;pg=5">GA 17: 5</a>, n. = 3, n. Heidegger says the term “phenomenology” was first
+        used by Johann Heinrich Lambert (1728-77) in his 1764 two-volume work on logic, <i>Neues Organon</i> 
+        (see Bibliography). The word itself first appears in that work at p. 4.22f. in the Vorrede
+        to vol. 1 where it is simply called “die Lehre von dem Schein.” 
+        The second half of vol. 2, pp. 215-435, is entitled 
+        “Phänomenologie oder die Lehre von dem Schein” and discusses how to avoid
+        illusion and adjudicate sensible, psychological, moral, and probable Scheine. 
+        See Karl Schuhmann, “‘Phenomenology’: A reflection on the history of the term,” 
+        in <i>The Routledge Companion to Phenomenology</i>, ed. Sebastian Luft and Søren
+        Overgaard, London: Routledge, 2021, 657-88.
+    </p>
+    <p>
+        [Roughly: Phenomenology is concerned in general with determining what is real
+        and true in every kind of appearance. To that end it works out the specific causes
+        and circumstances that produce and transform appearances, so that from
+        appearances one can infer what is real and true.]
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
+
+</p>

@@ -3,9 +3,19 @@
 “hidden” may be either necessary or accidental:
 <br/>
 &nbsp;&nbsp; • <i>necessary</i>, when the reason for the hiddenness lies in the very nature of the
-phenomenon that is hidden;<span style="color:magenta;" title="This is an intimation of what Heidegger finally thematized in December of 1930, 
-namely the intrinsic hiddenness of the clearing. See GA 9: 193.24-27 = 148.12-14 
-and Sheehan, Making Sense of Heidegger, 223-38.">◊</span>
+phenomenon that is hidden;
+<button id="Btn60d1" style="color:magenta;">◊</button>
+<dialog id="Dlg60d1">
+    <p style="text-indent:2em;">
+        This is an intimation of what Heidegger finally thematized in December of 1930, 
+namely the intrinsic hiddenness of the clearing. See <a href="https://www.beyng.com/gaselis/?vol=9&amp;pg=193">GA 9: 193</a>.24-27 = 
+<a href="https://www.beyng.com/pages/en/Pathmarks/Pathmarks.148.html">148</a>.12-14 
+and Sheehan, <i>Making Sense of Heidegger</i>, 223-38.
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 <br/>
 &nbsp;&nbsp; • <i>accidental</i>, which may occur in various ways. A concept that originated in direct firstperson
 experience can later degenerate by getting passed on in propositional form, or

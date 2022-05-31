@@ -1,18 +1,33 @@
 ﻿<p id="PC_51b" class="noindent">
 <b>6. <i>Appearance-1: a genuine phenomenon.</i></b> 
 In its primary sense, the Greek word <i>phainomenon</i>
-means “a thing insofar as it appears to us.”<span style="color:magenta;" title="(1) At GA 17: 6.11-13 = 4.3-5 Heidegger eschews the German word 
-“Erscheinung” as a translation of phainomenon because,
+means “a thing insofar as it appears to us.”
+<button id="Btn51b1" style="color:magenta;">◊</button>
+<dialog id="Dlg51b1">
+    <p style="text-indent:2em;">
+        (1) At GA 17: 6.11-13 = 4.3-5 Heidegger eschews the German word 
+“Erscheinung” as a translation of <i>phainomenon</i> because,
 as he rightly points out, “it creates confusion.” However, the English “appearance” is a good
-rendering of phainomenon, especially since the “ap-” (Latin, ad) indicates that a phenomenon
+rendering of <i>phainomenon</i>, especially since the “ap-” (Latin, ad) indicates that a phenomenon
 always implies a dative, a “to whom” of the appearing.
-(2) Heidegger will give the briefest definition of the primary and deformalized (¶ 27) sense
+</p>
+<p style="text-indent:2em;">
+    (2) Heidegger will give the briefest definition of the primary and deformalized (¶ 27) sense
 of “phenomenon” at SZ 97.14f. = 130.8f. (§ 21, ¶ 6): “etwas an ihm selbst Erfahrenes und in
 solcher Erfahrung Bestimmbares”; that is:
-• a what: something that we experience (etwas…Erfahrenes)
-• in how it shows up, i.e., in its way of being (an ihm selbst),
-• such that we can determine both the what and the how of what we experience, i.e., (1)
-the thing (2) in its way of being (in solcher Erfahrung Bestimmbares).">◊</span> The word <i>phainomenon</i> derives from the verb
+</p>
+<p style="margin-left:4em;text-indent:-2em;">• a <i>what</i>: something that we experience (etwas…Erfahrenes)
+</p>
+<p style="margin-left:4em;text-indent:-2em;">• in <i>how</i> it shows up, i.e., in its way of being (an ihm selbst),
+</p>
+<p style="margin-left:4em;text-indent:-2em;">• such that we can determine both the <i>what</i> and the <i>how</i> of what we experience, i.e., (1)
+the <i>thing</i> (2) in its <i>way of being</i> (in solcher Erfahrung Bestimmbares).
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
+The word <i>phainomenon</i> derives from the verb
 <i>phainesthai</i>, the present aorist infinitive, middle voice, of <i>phainō</i>, “to bring to light.” The stem of
 <i>phainō</i> is <i>pha</i>-, which is also the stem of <i>phōs</i>, “light, brightness,” i.e., the medium in which
 something becomes visible.
@@ -20,31 +35,49 @@ something becomes visible.
 &nbsp;&nbsp; The primary and genuine sense of <i>phainomenon</i> is “something that appears as itself” In the
 plural, <i>phainomena</i> (plural) refers to all things insofar as they are in, or can be brought into, “the
 light of day.” <i>Phainomena</i> are what the Greeks sometimes called <i>ta onta</i>, “whatever-is.” Such
-things can appear as they are in many ways, depending on how we have access to them.<span style="color:magenta;" title="In this paragraph (at respectively, SZ 28.33 and .37 = 51.12 and 16) 
-Heidegger uses two phrases to indicate how a genuine phenomenon shows up:
+things can appear as they are in many ways, depending on how we have access to them.
+<button id="Btn51b2" style="color:magenta;">◊</button>
+<dialog id="Dlg51b2">
+    <p style="text-indent:2em;">
+        In this paragraph (at respectively,
+        <a href="https://www.beyng.com/pages/de/SeinUndZeit/SeinUndZeit.028.html">SZ 28</a>.33 and .37 = 
+        <a href="https://www.beyng.com/btapp/page/51">51</a>.12 and 16) 
+Heidegger uses two phrases to indicate <i>how</i> a genuine phenomenon shows up:
 “in itself” (an ihm selbst) and “from itself” (von ihm selbst her).
-The “in itself” is fairly straightforward: it refers to something showing up as it really is in
-contrast to showing up as is not “[wie es] an ihm selbst nicht ist” (SZ 28.38f. = 51.18). This is the
+</p>
+<p style="text-indent:2em;">
+    The “in itself” is fairly straightforward: it refers to something showing up <i>as it really is</i> in
+contrast to showing up as <i>is not</i> “[wie es] an ihm selbst <i>nicht</i> ist” (SZ 28.38f. = 51.18). This is the
 difference between a genuine and a specious appearance.
-However, the “from itself” is more complex. It too is about how something shows up; but
+</p>
+<p style="text-indent:2em;">
+    However, the “from itself” is more complex. It too is about how something shows up; but
 at issue now is my access to and attitude about what shows up. The phenomenological correlation
 is operative here: my access to and attitude about what shows up is correlative to and co-determines
 the mode of its appearance, i.e., how the thing appears to me. That correlation of access 
-and mode-of-appearance can be expressed in terms of the grammatical mood of a sentence.
-• A sentence in the indicative (aka “realis”) mood purports to show the subject matter,
+and mode-of-appearance can be expressed in terms of the <i>grammatical mood</i> of a sentence.
+</p>
+<p style="margin-left:4em;text-indent:-2em;">
+    • A sentence in the indicative (aka “realis”) mood purports to show the subject matter,
 without qualification, just as it is, independent of my feelings, wishes, hopes, demands,
 etc. regarding the thing.
-• My feelings, wishes, etc. about the issue can be expressed by way of “irrealis”
+</p>
+<p style="margin-left:4em;text-indent:-2em;">
+    • My feelings, wishes, etc. about the issue can be expressed by way of “irrealis”
 grammatical moods: the subjunctive, optative, imperative, and so on.
+</p>
+<p>
 A thing shows up and is experienced correlative to who/what I am and thus how I appropriate it.
 Cf. the scholastic axiom “Quidquid recipitur, recipitur secundum modum recipientis”: Whatever
 is received is received according to the mode of the recipient” and “Cognitum autem est in
-cognoscente secundum modum cognoscentis” (Summa theologiae I, 12, 4, corpus): The known is
-in the knower according to the mode of the knower. If my intent is to see what the thing is in and
-of itself apart from my subjective feelings (etc.) about it—that is, if I approach it with an indicativedeclarative
+cognoscente secundum modum cognoscentis” (<i>Summa theologiae</i> I, 12, 4, corpus): The known is
+in the knower according to the mode of the knower. If my intent is to see what the thing is 
+<i>in and of itself</i> apart from my subjective feelings (etc.) about it—that is, if I approach it with an indicative-declarative
 attitude—the thing will ideally be seen as it is in itself; or to speak
 anthropomorphically, it will “show itself from itself.” However, we must note two things:
-• I can approach a thing with an indicative-declarative attitude, but my best intentions
+</p>
+<p style="margin-left:4em;text-indent:-2em;">
+    • I can approach a thing with an indicative-declarative attitude, but my best intentions
 notwithstanding, I can still end up seeing the thing as it is not. In other words, accessing
 something with an indicative-declarative attitude, or uttering a sentence in the realisindicative
 mood, is to claim that I am seeing and showing the thing as in fact it is; but
@@ -52,31 +85,56 @@ it is no guarantee that what I see and say will be what is actually the case. I 
 sincerely believe and say in the indicative/realis mood that Socrates was born in
 Thebes, but I would be wrong. Or I could in fact be intentionally lying when I tell
 someone that.
-• The faux reflexive “sich zeigen” along with the anthropomorphic “from ‘itself,’” might
-make one think that things show themselves (middle voice) as if they possessed some
+</p>
+<p style="margin-left:4em;text-indent:-2em;">
+    • The faux reflexive “sich zeigen” along with the anthropomorphic “from ‘itself,’” might
+make one think that things <i>show themselves</i> (middle voice) as if they possessed some
 sort of personal agency. But no, as distinct from persons, things just “show up” (rather
 than “showing themselves”) correlative to the access and attitude that one brings to the
-experience.">◊</span>
+experience.
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 <br/>
 &nbsp;&nbsp; <b><i>Appearance-2: a mere semblance.</i></b> Appearance-2, the secondary and non-genuine sense of
 <i>phainomenon</i>, is a mere semblance or specious appearance, something that appears as what it is
 not. It merely “looks like” or “seems to be” this or that. In Aristotle, for example, a <i>phainomenon</i>
-agathon means “a mere semblance of the good.”<span style="color:magenta;" title="Eudemian Ethics, VII 2, 1235b25">◊</span>
+agathon means “a mere semblance of the good.”
+<button id="Btn51b3" style="color:magenta;">◊</button>
+<dialog id="Dlg51b3">
+    <p>
+    <i>Eudemian Ethics</i>, VII 2, 1235b25
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 <br/>
 &nbsp;&nbsp; The structural connection between the primary and the secondary meanings of
 <i>phainomenon</i> is this: Only because a thing <i>can</i> appear to us as it is (i.e., can be a genuine
 phenomenon) can it also appear <i>as what it is not</i>/ (= a specious appearance). In other words, the
 secondary sense presumes the primary one, and the primary sense always underlies the secondary
 one. To put it differently: 
-the secondary sense is a “privative modification” of the primary one.<span style="color:magenta;" title="Here, as frequently elsewhere, Heidegger adopts and adapts 
-Aristotle's notion of sterēsis, “privation” or “deprivation” (Metaphysics V 22).
-Privation is a positive factor in the being of a thing—that is, it helps to define
+the secondary sense is a “privative modification” of the primary one.
+<button id="Btn51b4" style="color:magenta;">◊</button>
+<dialog id="Dlg51b4">
+    <p style="text-indent:2em;">
+        Here, as frequently elsewhere, Heidegger adopts and adapts 
+Aristotle's notion of <i>sterēsis</i>, “privation” or “deprivation” (<i>Metaphysics</i> V 22).
+Privation is a <i>positive</i> factor in the being of a thing—that is, it helps to define
 the thing as what is is—but it does so by showing that the thing lacks something. 
-In the case of a sterēsis, the fact that a thing is not this or that 
+In the case of a <i>sterēsis</i>, the fact that a thing is not this or that 
 (the thing's “Nichthaben”) co-constitutes the being of the thing.
-As Heidegger puts it, the fact that something is not this or that is what constitutes that
+As Heidegger puts it, the fact that something is <i>not</i> this or that is what constitutes that
 thing's being (“daß es das und das nicht ist macht sein Sein aus”: 
-GA 18: 4.4-7 = 3.5-4.2 and = 201-03.)">◊</span>
+<a href="https://www.beyng.com/gaselis/?vol=18&amp;pg=4">GA 18: 4</a>.4-7 = 3.5-4.2 and = 201-03.)
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 By just <i>looking like</i> a genuine appearance, a mere semblance “deprives” a genuine appearance of
 its genuineness.
 <br/>

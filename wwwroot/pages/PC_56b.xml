@@ -1,5 +1,5 @@
 ﻿<p id="PC_56b" class="noindent">
-<b>16. <i>Function-1: showing something in its meaning, whether correctly or not.</i></b><span style="color:magenta;" title="">◊</span> 
+<b>16. <i>Function-1: showing something in its meaning, whether correctly or not.</i></b>
 A <i>logos</i> Aristotle
 says, has the basic function of <i>dēloun</i>, making manifest what one is talking about. A <i>logos</i> makes
 sense of a thing by displaying that thing (the subject of the sentence) in terms of a <i>specific</i> meaning
@@ -11,31 +11,58 @@ parts, namely (1) “to display/make manifest,” and (2) “from.”<br />
 interlocutor how and as what something actually is.
 <br />
 &nbsp;&nbsp; • <i>apo-</i>: Moreover, I draw the sense that I make of the thing <i>from the thing itself</i> rather
-than from my feelings, desires, or hopes about the thing.<span style="color:magenta;" title="In a de-clarative sentence (apo-phansis, de-claratio) 
-I clarify the subject matter in predicative terms that are taken from (apo-, de-) 
+than from my feelings, desires, or hopes about the thing.
+<button id="Btn56b1" style="color:magenta;">◊</button>
+<dialog id="Dlg56b1">
+    <p style="text-indent:2em;">
+        In a de-clarative sentence (<i>apo-phansis</i>, de-claratio) 
+I clarify the subject matter in predicative terms that are taken from (<i>apo</i>-, de-) 
 the subject matter itself rather than from how I feel (etc.) about the subject matter. 
 See the second Editorial note to ¶ 6, 
-“Such things can appear as they are in many ways, depending on how we have access to them,” above.">◊</span>
-<br/>
+“Such things can appear as they are in many ways, depending on how we have access to them,” above.
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 An apophantic sentence (an assertion or proposition) makes the claim that what I am saying is an
 unqualified fact. Such a sentence is in the indicative/declarative mood. In Greek it is called an
 <i>apophansis</i>: it claims to show something (<i>-phansis</i>) as having a meaning that I draw <i>from (apo-)
 the thing itself</i> rather than from my subjective attitudes about the thing. Declarative statements are
-meaningful (i.e., understandable) regardless of whether the meaning is correct or not.<span style="color:magenta;" title="At § 44 ¶ 23 (SZ 220.7ff. = 262.36ff.) 
-Heidegger will characterize this paragraph as a “dogmatic” presentation of logos 
-and alētheia as contrasted with the phenomenological demonstration he provides in § 44.">◊</span> For
+meaningful (i.e., understandable) regardless of whether the meaning is correct or not.
+<button id="Btn56b2" style="color:magenta;">◊</button>
+<dialog id="Dlg56b2">
+    <p style="text-indent:2em;">
+        At § 44 ¶ 23 (<a href="https://www.beyng.com/pages/de/SeinUndZeit/SeinUndZeit.220.html">SZ 220</a>.7ff. = 
+        <a href="https://www.beyng.com/btapp/page/262">262</a>.36ff.) 
+Heidegger will characterize this paragraph as a “dogmatic” presentation of <i>logos</i> 
+and <i>alētheia</i> as contrasted with the phenomenological demonstration he provides in § 44.
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 <br/>
-&nbsp;&nbsp; However, not every meaningful sentence is in the indicative/declarative mood.<span style="color:magenta;" title="Aristotle holds that every articulate utterance is meaningful/understandable: 
+&nbsp;&nbsp; However, not every meaningful sentence is in the indicative/declarative mood.
+<button id="Btn56b3" style="color:magenta;">◊</button>
+<dialog id="Dlg56b3">
+    <p style="text-indent:2em;">
+        Aristotle holds that every articulate utterance is meaningful/understandable: 
 it can bring something present to mind; however, 
-not every articulate utterance shows something and claims that what it shows is a fact.
-(De interpretatione 17a 1-3: Every logos is meaningful/understandable, 
-but not every logos necessarily declarative.) 
+not every articulate utterance shows something <i>and</i> claims that what it shows is a fact.
+(<i>De interpretatione</i> 17a 1-3: Every <i>logos</i> is meaningful/understandable, 
+but not every <i>logos</i> necessarily declarative.) 
 Grammatical moods are ways that I can express how I and my sentence are
 related to the meaningful/understandable thing. Ancient Greek grammar knew of five moods
-(engkliseis; singular, engklisis): the indicative (hē horistikē the imperative (hē protatikē), the optative
-(hē eutikē), the subjunctive (hē hypotaktikē), and paradoxically the indefinite/infinitive 
-(hē aparemphatos: cf. a + para + en + phainō: not-indicating-[a mood]).">◊</span> For
-example, a request (<i>euchē</i>) such as “Please pass the salt” is understandable but neither true nor
+(<i>engkliseis</i>; singular, <i>engklisis</i>): the indicative (<i>hē horistikē</i> the imperative (<i>hē protatikē</i>), the optative
+(hē eutikē), the subjunctive (<i>hē hypotaktikē</i>), and paradoxically the indefinite/infinitive 
+(hē aparemphatos: cf. <i>a + para + en</i> + phainō: not-indicating-[a mood]).
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
+For example, a request (<i>euchē</i>) such as “Please pass the salt” is understandable but neither true nor
 false.
 <br/>
 <br/>

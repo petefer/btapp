@@ -2,8 +2,11 @@
 <b>20. <i>Function-5: making a judgment.</i></b> By considering the original meaning of the noun <i>alētheia</i>
 and the verb <i>alētheuein</i>, we can see that it is a gross misunderstanding to invoke Aristotle as the
 source of the erroneous thesis that the primary locus of alētheia—the primary place where sense
-is made of something—is the judgment underlying a declarative statement.<span style="color:magenta;" title="On Heidegger’s important distinctions regarding the kinds and levels of alētheia,
+is made of something—is the judgment underlying a declarative statement.
+<!--
+<span style="color:magenta;" title="On Heidegger’s important distinctions regarding the kinds and levels of alētheia,
 see the editorial note to § 44 ¶ 5, “the original experience of alētheia among the Greeks.”">◊</span>
+-->
 <br/>
 &nbsp;&nbsp; Judgment as an act of synthesis is not the primary locus of <i>alētheia</i> as disclosure. On the
 contrary, in comparison with <i>logos</i> as the <i>synthetic</i> apprehension of what something is and how it
@@ -13,9 +16,19 @@ operates, Aristotle holds to two forms of <i>non</i>-synthetic apprehension that
 insofar as
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp; • Every sense faculty aims directly and exclusively at its proper object (its <i>idiom</i>,
-plural <i>idia</i>).<span style="color:magenta;" title="Commenting on De anima II 6, 418al1 and De anima III 3, 427b12, Heidegger says: “An
-idion is something accessible through one specific manner of perceiving and only through that manner of perceiving. It has the character of being aei alēthes, i.e., always disclosive of its object.
-GA 17: 8.15-17 = 5.24-26.">◊</span> 
+plural <i>idia</i>).
+<button id="Btn57b1" style="color:magenta;">◊</button>
+<dialog id="Dlg57b1">
+    <p style="text-indent:2em;">
+        Commenting on <i>De anima</i> II 6, 418al1 and <i>De anima</i> III 3, 427b12, Heidegger says: “An
+<i>idion</i> is something accessible through one specific manner of perceiving and only through that manner of perceiving. 
+It has the character of being <i>aei alēthes</i>, i.e., always disclosive of its object.
+<a href="https://www.beyng.com/gaselis/?vol=17&amp;pg=8">GA 17: 8</a>.15-17 = 5.24-26.
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 The proper object of the eye is color, that of the ear is sound (the
 eye does not hear sound, and the ear does not see color), and so on.
 <br/>
@@ -25,8 +38,17 @@ together the sense faculty and its proper object.
 <br/>
 &nbsp;&nbsp;&nbsp;&nbsp; • Therefore, sense perception, as non-synthetic, is always disclosive (<i>alēthes</i>) of
 its objects and can never be mistaken (pseudes). I either see color, or I don't see
-at all.<span style="color:magenta;" title="Cf. Stephen Dedalus' musings on Aristotle and sight,
-“Ineluctable modality of the visible”: James Joyce, Ulysses (Gabler ed.), 31.1.">◊</span>
+at all.
+<button id="Btn57b2" style="color:magenta;">◊</button>
+<dialog id="Dlg57b2">
+    <p style="text-indent:2em;">
+        Cf. Stephen Dedalus' musings on Aristotle and sight,
+“Ineluctable modality of the visible”: James Joyce, <i>Ulysses</i> (Gabler ed.), 31.1.
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 <br/>
 &nbsp;&nbsp; 2. Pure intellectual intuition (<i>noein/noēsis</i>) has its object directly and immediately
 present-to-mind. It is the non-synthetic apprehension not of a <i>thing</i> but of the simplest
@@ -34,5 +56,15 @@ elements of what and how the thing <i>is</i>: the thing's <i>being</i>. As direc
 intellectual intuition is likewise always <i>alēthes</i>/disclosive in the purest and most
 original sense. It can never “cover something over,” it can never be incorrect. Either I
 have the being of something present-to-mind (<i>noein</i>) 
-or I do not know it at all (<i>agnoein</i>).<span style="color:magenta;" title="Metaphysics IX 10, 1052a2. Cf. GA 21:177.10-20 = 158.13-159.10.">◊</span>
+or I do not know it at all (<i>agnoein</i>).
+<button id="Btn57b3" style="color:magenta;">◊</button>
+<dialog id="Dlg57b3">
+    <p style="text-indent:2em;">
+        <i>Metaphysics</i> IX 10, 1052a2. Cf. <a href="https://www.beyng.com/gaselis/?vol=21&amp;pg=177">GA 21: 177</a>.10-20 = 
+        <a href="https://www.beyng.com/pages/en/Logic/Logic.158.html">158</a>.13-159.10.
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 </p>

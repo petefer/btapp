@@ -3,7 +3,16 @@
 properly phenomenological sense is the being of the thing that appears, and it can be hidden in
 various ways. It may have once be understood but now has become obscure, or it could show up
 in an erroneous form. It can have been so thoroughly forgotten that no questions are raised about
-it. In any case, this being is <i>the</i> phenomenon that phenomenology studies.<span style="color:magenta;" title="That is, the subject matter that phenomenology starts with (das Befragte) 
-is the being of a thing as; however, what Heidegger’s phenomenology is ultimately 
-after—das Erfragte—is how the being of things is intelligible.">◊</span>
+it. In any case, this being is <i>the</i> phenomenon that phenomenology studies.
+<button id="Btn59c1" style="color:magenta;">◊</button>
+<dialog id="Dlg59c1">
+    <p style="text-indent:2em;">
+        That is, the subject matter that phenomenology starts with (das Befragte) 
+is the being of <i>a thing</i> as; however, what Heidegger’s phenomenology is ultimately 
+after—das Erfragte—is how the being of things is <i>intelligible</i>.
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 </p>

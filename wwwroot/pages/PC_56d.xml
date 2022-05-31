@@ -1,8 +1,23 @@
 ﻿<p id="PC_56d" class="noindent">
-<b>18. <i>Function-3: synthesis and its declarative function.</i></b><span style="color:magenta;" title="Some of the following terminology that will be explained more fully later in § 44:
-• alētheia-1 = ex-sistence as the sphere of intelligibility, the so-called “clearing”;
-• alētheia-2 = the intelligibility of something when taken as this or that, whether correctly or not;
-• alētheia-3 = the truth of a correct statement.">◊</span> 
+<b>18. <i>Function-3: synthesis and its declarative function.</i></b>
+<button id="Btn56d1" style="color:magenta;">◊</button>
+<dialog id="Dlg56d1">
+    <p>
+        Some of the following terminology that will be explained more fully later in § 44:
+    </p>
+    <p style="margin-left:2em;">
+        • <i>alētheia</i>-1 = ex-sistence as the sphere of intelligibility, the so-called “clearing”;
+    </p>
+    <p style="margin-left:2em;">
+        • <i>alētheia</i>-2 = the intelligibility of something when taken as this or that, whether correctly or not;
+    </p>
+    <p style="margin-left:2em;">
+        • <i>alētheia</i>-3 = the truth of a correct statement.
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 We said that the first function of logos
 is to make sense of something, whether correctly or not, by drawing the meaning from the way the
 thing itself shows up rather than from my feelings or wishes about the thing. Given this apophantic/

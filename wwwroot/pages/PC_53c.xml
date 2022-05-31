@@ -22,14 +22,22 @@ example.
 <br />
 &nbsp;&nbsp; • On the one hand, in Kant empirical appearances <i>do show themselves</i> as the objects of
 empirical intuition. In that regard, they are genuine phenomena in our sense of the term.
-<span style="color:magenta;" title="But Heidegger's
+<button id="Btn53c1" style="color:magenta;">◊</button>
+<dialog id="Dlg53c1">
+    <p style="text-indent:2em;">
+        But Heidegger's
 sense of “phenomenon” is not the same as Kant's. In the “Aesthetic” Kant defined appearance as:
 “the undetermined object of an empirical intuition” (A 34/B 20). All objects of empirical intuition
 are appearances, but phenomena only those appearances that are “thought in accordance with the
 unity of the categories.” (A 248/B 305 Analogous (but only analogous) to Kant's distinction
 between appearances (Erscheinungen) and phenomena might be Heidegger's distinction between
-what appears and how it appears, i.e., between (1) das Seiende considered without explicit
-reference to its Sein and (2) das Seiende considered in terms of its Sein.">◊</span>
+<i>what</i> appears and <i>how</i> it appears, i.e., between (1) das Seiende considered without explicit
+reference to its Sein and (2) das Seiende considered <i>in terms of</i> its Sein.
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 <br />
 &nbsp;&nbsp; • On the other hand, however, these empirical appearances are <i>emanations from</i> the
 noumena, which remain hidden “behind” those empirical appearances.

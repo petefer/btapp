@@ -1,19 +1,39 @@
 ﻿<p id="PC_49d" class="noindent">
-<b>1. <i>The theme of the book and the question of method.</i></b> The thematic object of this study is the
+    <b>
+        1.
+        <i>The theme of the book and the question of method.</i>
+    </b>
+    The thematic object of this study is the
 being of things, specifically how that being is intelligible. Therefore, it might seem that we have
 already decided on the method: that of traditional ontology. All ontology aims at making the being
 of things stand out and then explaining being itself.
-<span style="color:magenta;" title="M-R 49.25ff. reverses the order of the German 
-(“Die Abhebung des Seins vom Seienden und die Explikation des Seins selbst,” SZ 29.8f) 
+    <button id="Btn49d1" style="color:magenta;">◊</button>
+    <dialog id="Dlg49d1">
+        <p>
+        <a href="https://www.beyng.com/btapp/page/49">M-R 49</a>.25ff. reverses the order of the German 
+(“Die Abhebung des Seins vom Seienden und die Explikation des Seins selbst,” 
+<a href="https://www.beyng.com/pages/de/SeinUndZeit/SeinUndZeit.029.html">SZ 29</a>.8f) 
 and thereby changes the meaning. 
-Heidegger’s sentence moves (1) from the being of things (= the focus of traditional ontology) 
-to how being/significance is understandable at all (= the task of SZ).">◊</span>
-However, the traditional methods for doing
+Heidegger's sentence moves (1) from the being of <i>things</i> (= the focus of traditional ontology) 
+to how being/significance is understandable at all (= the task of SZ).
+</p>
+        <form style="float:right;" method="dialog">
+            <button>Close</button>
+        </form>
+    </dialog>
+    However, the traditional methods for doing
 ontology are very questionable, and our own approach has nothing to do with them.
-<span style="color:magenta;" title="In October 1923 Heidegger had stated:
+    <button id="Btn49d2" style="color:magenta;">◊</button>
+    <dialog id="Dlg49d2">
+        <p>
+        In October 1923 Heidegger had stated:
 “It is my conviction that philosophy is at an end. We stand before completely
 new tasks that have nothing to do with traditional philosophy”
-(GA 17: 1.16-19 = 1.14-16).">◊</span>
-(We forego
-the task of tracing out the history of those methods.)
+(<a href="https://www.beyng.com/gaselis/?vol=17&amp;pg=1">GA 17: 1</a>.16-19 = 1.14-16).
+</p>
+        <form style="float:right;" method="dialog">
+            <button>Close</button>
+        </form>
+    </dialog>
+    (We forego the task of tracing out the history of those methods.)
 </p>

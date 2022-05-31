@@ -8,7 +8,16 @@ as well. However, that leaves it undecided whether a genuine phenomenon (appeara
 <br/>
 &nbsp;&nbsp; • the <i>being</i> of a thing: a “how,” namely how the thing is significant
 <br/>
-To illustrate the <i>phenomenological</i> sense of phenomenon,<span style="color:magenta;" title="The phenomenological concept of a phenomenon is the being of a genuine phenomenon. See ¶ 26 below.">◊</span> 
+To illustrate the <i>phenomenological</i> sense of phenomenon,
+<button id="Btn54d1" style="color:magenta;">◊</button>
+<dialog id="Dlg54d1">
+    <p style="text-indent:2em;">
+        The phenomenological concept of a phenomenon is the <i>being</i> of a genuine phenomenon. See ¶ 26 below.
+    </p>
+    <form style="float:right;" method="dialog">
+        <button>Close</button>
+    </form>
+</dialog>
 we will stay within the Kantian
 framework for a moment. If we were to search for <i>phenomenological</i> phenomena in the 
 <i>Critique of Pure Reason</i>, they would turn out to be not the empirical objects that show up in empirical
