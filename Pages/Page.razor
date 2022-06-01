@@ -2,6 +2,7 @@
 @page "/page/{number:int}"
 @inject HttpClient Http
 @inject IConfiguration Configuration
+@inject IJSRuntime JS
 @inject IWebAssemblyHostEnvironment HostEnvironment
 @using System.Globalization
 @using System.Text
@@ -252,6 +253,8 @@
         Log += $"PCon is {PCon}.";
         pageContent = xdoc.InnerXml;
         this.StateHasChanged();
+        // now that the updated HTML has been rendered, call the JS to registered footnote button events that'll open dialogs
+        await JS.InvokeAsync<object>("MyJSMethods.myMethod", new object[]{currentPage});
     }
 
     async Task<string> FetchPC(XmlDocument xdoc, string id)
