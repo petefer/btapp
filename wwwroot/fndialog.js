@@ -288,6 +288,15 @@ window.MyJSMethods =
                     alert(msgNoAPI);
                 }
             });
+            const btn59c1 = document.getElementById('Btn59c1');
+            const dlg59c1 = document.getElementById('Dlg59c1');
+            btn59c1.addEventListener('click', function onOpen() {
+                if (typeof dlg59c1.showModal === "function") {
+                    dlg59c1.showModal();
+                } else {
+                    alert(msgNoAPI);
+                }
+            });
             return;
         }
         if (element == 60)
@@ -336,6 +345,24 @@ window.MyJSMethods =
         }
         if (element == 62)
         {
+            const btn61e2 = document.getElementById('Btn61e2');
+            const dlg61e2 = document.getElementById('Dlg61e2');
+            btn61e2.addEventListener('click', function onOpen() {
+                if (typeof dlg61e2.showModal === "function") {
+                    dlg61e2.showModal();
+                } else {
+                    alert(msgNoAPI);
+                }
+            });
+            const btn61e3 = document.getElementById('Btn61e3');
+            const dlg61e3 = document.getElementById('Dlg61e3');
+            btn61e3.addEventListener('click', function onOpen() {
+                if (typeof dlg61e3.showModal === "function") {
+                    dlg61e3.showModal();
+                } else {
+                    alert(msgNoAPI);
+                }
+            });
             const btn62b2 = document.getElementById('Btn62b2');
             const dlg62b2 = document.getElementById('Dlg62b2');
             btn62b2.addEventListener('click', function onOpen() {
