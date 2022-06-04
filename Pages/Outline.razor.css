@@ -1,0 +1,8 @@
+﻿p.number {
+    text-indent: 4em;
+}
+
+p.sub {
+    text-indent: 1em;
+    font-weight: bold;
+}
