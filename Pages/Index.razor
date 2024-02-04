@@ -1,5 +1,6 @@
 ﻿@page "/"
 @inject NavigationManager NavManager
+@inject IWebAssemblyHostEnvironment HostEnvironment
 
 <h1>Being and Time</h1>
 <h2>Martin Heidegger</h2>
@@ -41,7 +42,10 @@
 <p>
     Email corrections and suggestions to info at beyng.com.
 </p>
-
+<p>
+    Environment: @HostEnvironment.Environment<br/>
+    .NET Version: @Environment.Version
+</p>
 <br />
 <br />
 <Banner />
